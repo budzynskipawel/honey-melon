@@ -1,5 +1,10 @@
 /*test1123456789*/
 @import "partials/reset";
+@import "partials/variables";
+@import "partials/mixins";
+
 body{
-  background: red;
+  @include phone{
+    background: red;
+  }
 }
