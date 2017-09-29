@@ -2,9 +2,5 @@
 @import "partials/reset";
 @import "partials/variables";
 @import "partials/mixins";
-
-body{
-  @include phone{
-    background: red;
-  }
-}
+@import "partials/main";
+@import "partials/header";

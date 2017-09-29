@@ -1,0 +1,34 @@
+header{
+  min-height: 100vh;
+}
+
+.square{
+  width: (100%)/3;
+  height:33vw;
+  background: red;
+  float:left;
+  &:nth-of-type(2n+1){
+    background: black;
+  }
+  &:hover{
+     opacity: 0.7;
+  }
+  @include tablet{
+    height: (100vw)/5;
+    width: (100%)/5;
+  }
+  @include desktop{
+    height: (100vw)/7;
+    width: (100%)/7;
+    &:last-child, &:nth-last-child(2){
+      display: none;
+    }
+  }
+  @include large{
+    height: (100vw)/7;
+    width: (100%)/7;
+    &:last-child, &:nth-last-child(2){
+      display: none;
+    }
+  }
+}
