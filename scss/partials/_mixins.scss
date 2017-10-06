@@ -4,6 +4,12 @@
   }
 }
 
+@mixin phone-landscape{
+  @media #{$phone-landscape}{
+    @content;
+  }
+}
+
 @mixin tablet{
   @media #{$tablet}{
     @content;
