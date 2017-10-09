@@ -1,5 +1,21 @@
+//media queries
+
 $phone:"(max-width: 719px)";
 $phone-landscape: "(max-width: 719px) and (orientation: landscape)";
 $tablet:"(min-width: 720px) and(max-width: 1024px)";
 $desktop: "(min-width: 1025px) and (max-width: 1800px)";
 $large:"(min-width: 1801px)";
+
+
+
+
+//fonts
+$mainFont: 'Poppins';
+
+//colors
+
+$mainLight: #daf0aa;
+$mainColor: #b5e37f;
+$mainDark: #9fc360;
+$secondaryLight: #ffec7b;
+$secondaryDark: #ecd860;

@@ -1,3 +1,4 @@
+//mediaqueries
 @mixin phone{
   @media #{$phone}{
     @content;

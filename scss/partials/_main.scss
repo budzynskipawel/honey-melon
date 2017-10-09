@@ -1,3 +1,14 @@
+html{
+  font-size: 16px;
+
+}
+
+body{
+  min-width: 300px;
+  min-height: 500px;
+  /**/
+}
+
 .clearfix::after{
   display: block;
   content: "";
@@ -5,8 +16,10 @@
 }
 
 .center{
+
   width: 100%;
+  border: 1px solid black;
   height: 100%;
-  
+  margin: 0 auto;
 
 }

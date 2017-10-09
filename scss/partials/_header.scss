@@ -1,28 +1,28 @@
 header{
 background-image: url(https://previews.123rf.com/images/tratong/tratong1109/tratong110900207/10540146-Colorful-Mosaic-Stock-Photo-mosaic-architecture-abstract.jpg);
 }
-/*RESPONSIVE MAP OF SQUARES - mobile first*/
+//RESPONSIVE MAP OF SQUARES - mobile first
 .square{
   width: (100%)/3;
   height:33vw;
   float:left;
-  background: #FFCDA4;
+  background: $mainLight;
 
   &:nth-of-type(2n+1){
-    background: #a4ffa4;
+    background: $mainColor;
   }
 
   &:hover{
      background: rgba(255,255,255,0.9);
   }
 
-/*display only 15 squares*/
+//display only 15 squares
   @include phone{
     &:nth-of-type(n+16){
       display: none;
     }
   }
-/*5 squares in a row*/
+//5 squares in a row
   @include phone-landscape{
     height: (100vw)/5;
     width: (100%)/5;
@@ -31,7 +31,7 @@ background-image: url(https://previews.123rf.com/images/tratong/tratong1109/trat
     height: (100vw)/5;
     width: (100%)/5;
   }
-/*7 squares in a row*/
+//7 squares in a row
   @include desktop{
     height: (100vw)/7;
     width: (100%)/7;
@@ -44,26 +44,34 @@ background-image: url(https://previews.123rf.com/images/tratong/tratong1109/trat
   }
 }
 
-/*CENTERED LOGO IN HEADER (POS:FIXED)*/
+//CENTERED LOGO IN HEADER (POS:FIXED)
 
 .logo{
-  font-family: 'Poppins', sans-serif;
+  font-family: $mainFont, Tahoma, sans-serif;
   text-align: center;
-  color: #FF5F5F;
+  color: $mainDark;
   position: fixed;
   left: 50%;
-  top: calc(50%);
+  top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10000;
-  padding-bottom: 10px;
-  font-size: 32px;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+
   @include tablet{
-    font-size: 48px;
+    font-size: 3rem;
   }
   @include desktop{
-    font-size: 48px;
+    font-size: 4rem;
   }
+
   @include large{
-    font-size: 64px;
+    font-size: 5rem;
   }
+
+}
+
+.squares-container{
+  width: 100%;
+  height: 100%;
 }
