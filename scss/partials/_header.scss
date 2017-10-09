@@ -47,6 +47,7 @@ background-image: url(https://previews.123rf.com/images/tratong/tratong1109/trat
 //CENTERED LOGO IN HEADER (POS:FIXED)
 
 .logo{
+  display: none;
   font-family: $mainFont, Tahoma, sans-serif;
   text-align: center;
   color: $mainDark;
