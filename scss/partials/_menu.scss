@@ -1,7 +1,8 @@
 .menu{
   height: 64px;
   background: $secondaryLight;
-  color: $mainDark;
+  border-top: 0.2rem solid $secondaryDark;
+  color: $secondaryDark;
   font-family: $mainFont, sans-serif;
   font-size: 2rem;
   padding: auto;

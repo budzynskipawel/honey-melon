@@ -16,10 +16,17 @@ body{
 }
 
 .center{
-
+  border-color: blue!important;
   width: 100%;
-  border: 1px solid black;
   height: 100%;
   margin: 0 auto;
+  @include desktop {
+    width: 64rem;
+  }
+
+  @include large{
+    width: 64rem;
+  }
+
 
 }
