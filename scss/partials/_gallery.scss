@@ -3,7 +3,7 @@
 
 }
 
-.main-slider, .tabs{
+.main-slider {
   width: 100%;
   @include desktop{
     width: 50%
@@ -17,12 +17,13 @@
     width: 50%
   };
 
-  height: 500px;
+  min-height: 500px;
   float: left;
 
 }
 .main-slider{
   position: relative;
+  padding: 2rem;
 }
 .left-arrow, .right-arrow{
 width: 2rem;
@@ -36,8 +37,21 @@ top: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
+transform: translate(0, -50%);
 
 }
+.left-arrow{
+  left: 0;
+}
+
 .right-arrow{
   right: 0;
+}
+
+.main-slider>ul>li{
+  display: inline-block;
+  list-style-type: none;
+  width: 25%;
+  border: 1px solid red;
+  float: left;
 }
