@@ -17,14 +17,11 @@
     width: 50%
   };
 
-  min-height: 500px;
-  &:nth-child(2){
-    @include phone{
-      min-height: 1px;
-    }
-  }
   float: left;
-
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .left-arrow, .right-arrow{
