@@ -68,7 +68,7 @@
   @include large{
     display: block;
   };
-
+// GALLERY
 }
 .checkboxes{
   display: flex;
@@ -86,7 +86,15 @@
     display: flex;
     align-items: center;
     justify-content:center;
-
-
-
 }
+
+.mosaic{
+
+
+  img{
+
+    float: left;
+    width: 16.66%;
+    height: auto;
+  }
+  }
