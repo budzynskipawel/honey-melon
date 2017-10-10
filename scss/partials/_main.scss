@@ -1,11 +1,15 @@
 html{
   font-size: 16px;
 
+
 }
 
 body{
   min-width: 300px;
   min-height: 500px;
+  font-family: $mainFont, Verdana, sans-serif;
+  color: $darkBackground;
+
   /**/
 }
 
@@ -26,6 +30,30 @@ body{
 
   @include large{
     width: 64rem;
+  }
+
+
+}
+.basic{
+  background: white;
+
+}
+
+footer{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  /**/
+  background: $secondaryLight;
+  border-bottom: 0.2rem solid $secondaryDark;
+  color: $secondaryDark;
+  span{
+    font-weight: bold;
+  }
+  @include phone{
+    font-size: 0.625rem;
   }
 
 

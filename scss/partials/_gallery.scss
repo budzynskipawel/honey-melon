@@ -1,10 +1,10 @@
-.gallery{
-  background: white;
 
-}
 
 .main-slider {
   width: 100%;
+  position: relative;
+  padding: 1rem;
+  text-align: justify;
   @include desktop{
     width: 50%
   };
@@ -18,13 +18,15 @@
   };
 
   min-height: 500px;
+  &:nth-child(2){
+    @include phone{
+      min-height: 1px;
+    }
+  }
   float: left;
 
 }
-.main-slider{
-  position: relative;
-  padding: 2rem;
-}
+
 .left-arrow, .right-arrow{
 width: 2rem;
 height: 2rem;
@@ -49,9 +51,22 @@ transform: translate(0, -50%);
 }
 
 .main-slider>ul>li{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   width: 25%;
+  height: 3rem;
   border: 1px solid red;
   float: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tab{
+  @include phone{
+    min-height: 1px;
+  };
+  min-height: 420px;
+
 }
