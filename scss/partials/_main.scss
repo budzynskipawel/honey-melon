@@ -6,7 +6,7 @@ html{
 
 body{
   min-width: 300px;
-  min-height: 500px;
+
   font-family: $mainFont, Verdana, sans-serif;
   color: $darkBackground;
 
@@ -37,6 +37,14 @@ body{
 .basic{
   background: white;
 
+}
+
+.basic-flex{
+  @include phone{
+    display: block;
+  };
+  display: flex;
+  align-items: center;
 }
 
 footer{
